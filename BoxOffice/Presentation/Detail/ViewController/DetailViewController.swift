@@ -16,6 +16,7 @@ final class DetailViewController: UIViewController {
   private let contentStackView: UIStackView = {
     let stack = UIStackView()
     stack.axis = .vertical
+    stack.spacing = 2
     return stack
   }()
   
@@ -42,28 +43,17 @@ final class DetailViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     configureLayout()
-    self.viewModel.viewDidLoad()
   }
 }
 
-extension DetailViewController {
-  private func configureLayout() {
-    configureHierachy()
-    configureLayoutStyle()
-    configureConstraint()
-  }
-  
-  private func configureHierachy() {
+private extension DetailViewController {
+  func configureLayout() {
     self.view.addSubview(self.scrollView)
     self.scrollView.addSubview(self.contentStackView)
-  }
-  
-  private func configureLayoutStyle() {
+    
     self.scrollView.translatesAutoresizingMaskIntoConstraints = false
     self.contentStackView.translatesAutoresizingMaskIntoConstraints = false
-  }
-  
-  private func configureConstraint() {
+    
     NSLayoutConstraint.activate([
       self.scrollView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
       self.scrollView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor),
