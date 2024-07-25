@@ -7,7 +7,10 @@
 
 ## 🍄‍🟫 스크린샷
 
-![screenshot-2024-07-25.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/c1fc0342-5097-4f91-9792-88ded7b2afed/a2434cce-7fd2-44f0-a1db-c7251e66f696/screenshot-2024-07-25.png)
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/29450882-7b95-41a4-bdd8-86f6d8cc933d" width=300>
+</p>
+
 
 ## 🍄‍🟫 개요
 
@@ -25,7 +28,10 @@
 
 ### 주요 계층 및 이벤트 처리 흐름
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/c1fc0342-5097-4f91-9792-88ded7b2afed/dd2628c1-bcf3-49c9-b840-badb56d98aed/Untitled.png)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/660a7273-0088-4d90-895b-d0d284af8773" width=1000>
+</p>
+
 
 - `View - ViewController - UseCase - Repository - Network` 의 계층으로 구성
 - async-await 도입으로 호출 후 결과를 `리턴`받을 수 있도록 구현
